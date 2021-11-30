@@ -13,8 +13,15 @@
     &nbsp;</p>
 <p class="text-center">
     LISTADO DE EMPLEADOS</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Nombres" DataValueField="Id_Empleado">
+        </asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Sistema de ventasConnectionString %>" SelectCommand="SELECT * FROM [Empleados]"></asp:SqlDataSource>
+    </p>
 <p class="text-center">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id_Empleado" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id_Empleado" DataSourceID="SqlDataSource2" AllowPaging="True" AllowSorting="True">
         <Columns>
             <asp:BoundField DataField="Id_Empleado" HeaderText="Id_Empleado" ReadOnly="True" SortExpression="Id_Empleado" />
             <asp:BoundField DataField="Nombres" HeaderText="Nombres" SortExpression="Nombres" />
@@ -35,6 +42,45 @@
             <asp:BoundField DataField="Jefatura" HeaderText="Jefatura" SortExpression="Jefatura" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Sistema de ventasConnectionString %>" SelectCommand="SELECT [Id_Empleado], [Nombres], [Apellidos], [Fecha_de_Nacimiento], [Telefono], [Direccion], [Genero], [Departamento], [Nivel_laboral], [Sueldo], [Observaciones], [Correo], [Numero_de_Dui], [Numero_de_Nit], [Numero_de_AFP], [Fecha_de_Ingreso], [Jefatura] FROM [Empleados]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Sistema de ventasConnectionString %>" SelectCommand="SELECT * FROM [Empleados] WHERE ([Id_Empleado] = @Id_Empleado)">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="DropDownList1" Name="Id_Empleado" PropertyName="SelectedValue" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 </p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+<p class="text-center">
+    &nbsp;</p>
+<p class="text-center">
+    LISTADO DE EMPLEADOS</p>
+    <p class="text-center">
+        <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource3" DataTextField="Puesto" DataValueField="Id_de_Empleado">
+        </asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:Sistema de ventasConnectionString %>" SelectCommand="SELECT * FROM [Puestos]"></asp:SqlDataSource>
+    </p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4">
+            <Columns>
+                <asp:BoundField DataField="Id_de_Puesto" HeaderText="Id_de_Puesto" SortExpression="Id_de_Puesto" />
+                <asp:BoundField DataField="Id_de_Empleado" HeaderText="Id_de_Empleado" SortExpression="Id_de_Empleado" />
+                <asp:BoundField DataField="Puesto" HeaderText="Puesto" SortExpression="Puesto" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:Sistema de ventasConnectionString %>" SelectCommand="SELECT * FROM [Puestos] WHERE ([Id_de_Empleado] = @Id_de_Empleado)">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="DropDownList2" Name="Id_de_Empleado" PropertyName="SelectedValue" Type="Int32" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
 </asp:Content>

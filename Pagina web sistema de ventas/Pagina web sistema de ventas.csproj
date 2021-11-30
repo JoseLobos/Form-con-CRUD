@@ -192,8 +192,6 @@
     <Content Include="Account\Web.config" />
     <Content Include="Login.aspx" />
     <Content Include="Productos.aspx" />
-    <Content Include="Puestos.aspx" />
-    <Content Include="Puestos2.aspx" />
     <Content Include="Recursos\Captura de pantalla %28819%29.png" />
     <Content Include="Recursos\Captura de pantalla %28821%29.png" />
     <Content Include="Recursos\Captura de pantalla %28824%29.png" />
@@ -417,20 +415,6 @@
       <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Puestos.aspx.cs">
-      <DependentUpon>Puestos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Puestos.aspx.designer.cs">
-      <DependentUpon>Puestos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Puestos2.aspx.cs">
-      <DependentUpon>Puestos2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Puestos2.aspx.designer.cs">
-      <DependentUpon>Puestos2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Registro de Compras.aspx.cs">
       <DependentUpon>Registro de Compras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

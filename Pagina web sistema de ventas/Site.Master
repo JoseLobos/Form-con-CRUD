@@ -202,8 +202,8 @@ body {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="Consulta-content">
-        <a runat="server" href="~/Empleados"> T Empleados/Puestos</a>
-        <a runat="server" href="~/Ventas,Compras"> T Ventas/Compras</a>
+        <a runat="server" href="~/Empleados">  Empleados/Puestos</a>
+        <a runat="server" href="~/  "> </a>
         <a runat="server" href="~/Consulta usuario"> Usuarios</a>
         <a runat="server" href="~/Productos,Existencias"> Productos/Existencias</a>
         
