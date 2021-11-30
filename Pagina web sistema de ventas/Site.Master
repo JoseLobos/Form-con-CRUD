@@ -15,6 +15,140 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mynav_navbar {
+  overflow: hidden;
+  background-color: #00ffff;
+}
+
+.mynav_navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mynav_dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.mynav_dropdown .mynav_dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.mynav_navbar a:hover, .mynav_dropdown:hover .mynav_dropbtn {
+  background-color: red;
+}
+
+.mynav_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.mynav_dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.mynav_dropdown-content a:hover {
+  background-color: #f00;
+}
+
+.mynav_dropdown:hover .mynav_dropdown-content {
+  display: block;
+}
+</style>
+
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navcar {
+  overflow: hidden;
+  background-color: #00ffff;
+}
+
+.navcar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Consulta {
+  float: left;
+  overflow: hidden;
+}
+
+.Consulta .Consulbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navcar a:hover, .Consulta:hover .Consulbtn {
+  background-color: red;
+}
+
+.Consulta-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Consulta-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.Consulta-content a:hover {
+  background-color: #f00;
+}
+
+.Consulta:hover .Consulta-content {
+  display: block;
+}
+</style>
+
 </head>
 <body class="bg-info">
     <form runat="server">
@@ -38,46 +172,44 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">APP Sistema de Ventas</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/Empleados">Empleados</a></li>
-                         <li><a runat="server" href="~/Puestos">Puestos</a></li>
-                        <li><a runat="server" href="~/Puestos2">Empleados/Puestos</a></li>
-                        <li><a runat="server" href="~/Formulario registro">Registro de Usuarios</a></li>
-                        <li><a runat="server" href="~/formulario registro empleados">Registro de Empleados</a></li>
-                       <li><a runat="server" href="~/Registrodepuesto">Registro de Puesto/Empleado</a></li> 
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Registrarse</a></li>
-                                <li><a runat="server" href="~/Account/Login">Iniciar sesión</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hola. <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
-            </div>
+        
+
+            <div class="mynav_navbar">
+  <a runat="server" href="~/">Inicio</a>
+  <a runat="server" href="~/About">Acerca de</a>
+  <a runat="server" href="~/Contact">Contacto</a>
+  <div class="mynav_dropdown">
+    <button class="mynav_dropbtn">Registros 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="mynav_dropdown-content">
+       <a runat="server" href="~/formulario registro empleados">Registro de Empleados</a>
+       <a runat="server" href="~/Registro de Usuarios"> Usuarios</a>
+      <a runat="server" href="~/Registro de compras"> Compras</a>
+      <a runat="server" href="~/registro de ventas">  Ventas</a>
+      <a runat="server" href="~/rpuestos"> Puesto/Empleado</a>
+        <a runat="server" href="~/Existencias">Existencias</a>
+        <a runat="server" href="~/Productos">Productos</a>
+        >
+    </div>
+  </div> 
+
+
+                  <div class="Consulta">
+  
+  <div class="mynav_Consulta">
+    <button class="Consulbtn">Consulta
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="Consulta-content">
+        <a runat="server" href="~/Empleados"> T Empleados/Puestos</a>
+        <a runat="server" href="~/Ventas,Compras"> T Ventas/Compras</a>
+        <a runat="server" href="~/Consulta usuario"> Usuarios</a>
+        <a runat="server" href="~/Productos,Existencias"> Productos/Existencias</a>
+        
+</div>
+      </div>
+
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

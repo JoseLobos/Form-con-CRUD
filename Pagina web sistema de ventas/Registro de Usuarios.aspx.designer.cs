@@ -11,17 +11,17 @@ namespace Pagina_web_sistema_de_ventas
 {
 
 
-    public partial class Formulario_registro
+    public partial class Registro_de_Usuarios
     {
 
         /// <summary>
-        /// Control Image1.
+        /// Control Image2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image Image2;
 
         /// <summary>
         /// Control Label4.
@@ -141,12 +141,21 @@ namespace Pagina_web_sistema_de_ventas
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Control Button2.
+        /// Control Button7.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button Button7;
+
+        /// <summary>
+        /// Control Button8.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button8;
     }
 }

@@ -178,7 +178,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="formulario registro empleados.aspx" />
-    <Content Include="Formulario registro.aspx" />
     <Content Include="Formulario web1.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -197,6 +196,8 @@
     <Content Include="Recursos\Captura de pantalla %28821%29.png" />
     <Content Include="Recursos\Captura de pantalla %28824%29.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Recursos\Captura de pantalla %28894%29.png" />
+    <Content Include="Registro de Usuarios.aspx" />
     <Content Include="Registrodepuesto.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -378,13 +379,6 @@
     <Compile Include="formulario registro empleados.aspx.designer.cs">
       <DependentUpon>formulario registro empleados.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Formulario registro.aspx.cs">
-      <DependentUpon>Formulario registro.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Formulario registro.aspx.designer.cs">
-      <DependentUpon>Formulario registro.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Formulario web1.aspx.cs">
       <DependentUpon>Formulario web1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -417,6 +411,13 @@
     </Compile>
     <Compile Include="Puestos2.aspx.designer.cs">
       <DependentUpon>Puestos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro de Usuarios.aspx.cs">
+      <DependentUpon>Registro de Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro de Usuarios.aspx.designer.cs">
+      <DependentUpon>Registro de Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registrodepuesto.aspx.cs">
       <DependentUpon>Registrodepuesto.aspx</DependentUpon>
