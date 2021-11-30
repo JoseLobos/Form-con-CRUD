@@ -23,6 +23,7 @@
 <p class="text-center">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id_Empleado" DataSourceID="SqlDataSource2" AllowPaging="True" AllowSorting="True">
         <Columns>
+            <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="Id_Empleado" HeaderText="Id_Empleado" ReadOnly="True" SortExpression="Id_Empleado" />
             <asp:BoundField DataField="Nombres" HeaderText="Nombres" SortExpression="Nombres" />
             <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" SortExpression="Apellidos" />
@@ -64,8 +65,9 @@
     <p class="text-center">
         &nbsp;</p>
     <p class="text-center">
-        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4">
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4" AllowPaging="True" AllowSorting="True">
             <Columns>
+                <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="Id_de_Puesto" HeaderText="Id_de_Puesto" SortExpression="Id_de_Puesto" />
                 <asp:BoundField DataField="Id_de_Empleado" HeaderText="Id_de_Empleado" SortExpression="Id_de_Empleado" />
                 <asp:BoundField DataField="Puesto" HeaderText="Puesto" SortExpression="Puesto" />

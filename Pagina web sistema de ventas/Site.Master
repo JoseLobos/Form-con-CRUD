@@ -203,9 +203,10 @@ body {
     </button>
     <div class="Consulta-content">
         <a runat="server" href="~/Empleados">  Empleados/Puestos</a>
-        <a runat="server" href="~/  "> </a>
-        <a runat="server" href="~/Consulta usuario"> Usuarios</a>
-        <a runat="server" href="~/Productos,Existencias"> Productos/Existencias</a>
+         <a runat="server" href="~/producto,existencias"> Producto/Existencias</a>
+        <a runat="server" href="~/compra,ventas"> Compra/Ventas</a>
+         <a runat="server" href="~/Usuarios"> Usuarios</a>
+       
         
 </div>
       </div>
