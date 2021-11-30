@@ -17,12 +17,12 @@
 </p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Image ID="Image2" runat="server" Height="62px" ImageUrl="~/Recursos/Captura de pantalla (824).png" Width="106px" />
+    </p>
+<p class="text-left">
+    <asp:Image ID="Image3" runat="server" Height="62px" ImageUrl="~/Recursos/Captura de pantalla (824).png" Width="106px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label11" runat="server" Text="Registro de Compras"></asp:Label>
-</p>
-<p>
-    &nbsp;</p>
+    <asp:Label ID="Label12" runat="server" Text="Registro de Compras"></asp:Label>
+    </p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label2" runat="server" Text="Id de compra"></asp:Label>

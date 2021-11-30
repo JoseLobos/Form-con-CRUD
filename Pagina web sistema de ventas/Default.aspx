@@ -4,11 +4,11 @@
 
     <div class="jumbotron">
         <h1>&nbsp;</h1>
-        <p class="lead">
+        <p class="lead" style="text-align: center">
             <asp:Label ID="Label1" runat="server" Text="BIENVENIDO AL SISTEMA"></asp:Label>
         </p>
         <p class="lead">
-            <asp:Image ID="Image1" runat="server" Height="591px" ImageUrl="~/Recursos/Captura de pantalla (894).png" style="margin-top: 13px" Width="913px" />
+            <asp:Image ID="Image1" runat="server" Height="485px" ImageUrl="~/Recursos/Captura de pantalla (894).png" style="margin-top: 13px" Width="990px" />
         </p>
     </div>
 
