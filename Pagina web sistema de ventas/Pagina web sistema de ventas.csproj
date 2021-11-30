@@ -175,6 +175,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Empleados.aspx" />
+    <Content Include="Existencias.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="formulario registro empleados.aspx" />
@@ -375,6 +376,13 @@
     </Compile>
     <Compile Include="Empleados.aspx.designer.cs">
       <DependentUpon>Empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Existencias.aspx.cs">
+      <DependentUpon>Existencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Existencias.aspx.designer.cs">
+      <DependentUpon>Existencias.aspx</DependentUpon>
     </Compile>
     <Compile Include="formulario registro empleados.aspx.cs">
       <DependentUpon>formulario registro empleados.aspx</DependentUpon>
