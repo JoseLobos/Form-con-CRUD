@@ -11,7 +11,7 @@ namespace Pagina_web_sistema_de_ventas
 {
 
 
-    public partial class Registro_de_compras
+    public partial class Registro_de_Compras
     {
 
         /// <summary>
