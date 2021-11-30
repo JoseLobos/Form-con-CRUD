@@ -200,6 +200,7 @@
     <Content Include="Recursos\Captura de pantalla %28894%29.png" />
     <Content Include="Registro de Compras.aspx" />
     <Content Include="Registro de Usuarios.aspx" />
+    <Content Include="registro de ventas.aspx" />
     <Content Include="Registrodepuesto.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -434,6 +435,13 @@
     </Compile>
     <Compile Include="Registro de Usuarios.aspx.designer.cs">
       <DependentUpon>Registro de Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registro de ventas.aspx.cs">
+      <DependentUpon>registro de ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro de ventas.aspx.designer.cs">
+      <DependentUpon>registro de ventas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registrodepuesto.aspx.cs">
       <DependentUpon>Registrodepuesto.aspx</DependentUpon>
