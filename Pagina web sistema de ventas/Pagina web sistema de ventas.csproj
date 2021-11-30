@@ -202,6 +202,7 @@
     <Content Include="Registro de Usuarios.aspx" />
     <Content Include="registro de ventas.aspx" />
     <Content Include="Registrodepuesto.aspx" />
+    <Content Include="rpuestos.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -449,6 +450,13 @@
     </Compile>
     <Compile Include="Registrodepuesto.aspx.designer.cs">
       <DependentUpon>Registrodepuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rpuestos.aspx.cs">
+      <DependentUpon>rpuestos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rpuestos.aspx.designer.cs">
+      <DependentUpon>rpuestos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
