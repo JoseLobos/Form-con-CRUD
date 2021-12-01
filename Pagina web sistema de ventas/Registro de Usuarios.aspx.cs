@@ -123,8 +123,8 @@ namespace Pagina_web_sistema_de_ventas
             cmd2.Parameters.AddWithValue("@Id_usuario", TextBox4.Text);
             cmd2.Parameters.AddWithValue("@Usuario", TextBox1.Text);
             cmd2.Parameters.AddWithValue("@Clave", TextBox2.Text);
-            cmd2.Parameters.AddWithValue("@Correo", TextBox3.Text);
-            cmd2.Parameters.AddWithValue("@Nivel", TextBox5.Text);
+            cmd2.Parameters.AddWithValue("@Correo", TextBox5.Text);
+            cmd2.Parameters.AddWithValue("@Nivel", TextBox3.Text);
             cmd2.Parameters.AddWithValue("@Direccion", TextBox6.Text);
 
 

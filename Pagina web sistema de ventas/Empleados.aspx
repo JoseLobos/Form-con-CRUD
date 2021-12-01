@@ -56,7 +56,7 @@
 <p class="text-center">
     &nbsp;</p>
 <p class="text-center">
-    LISTADO DE EMPLEADOS</p>
+    LISTADO DE PUESTOS/EMPLEADOS</p>
     <p class="text-center">
         <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource3" DataTextField="Puesto" DataValueField="Id_de_Empleado">
         </asp:DropDownList>
