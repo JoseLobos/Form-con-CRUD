@@ -194,6 +194,7 @@
     <Content Include="Login.aspx" />
     <Content Include="producto,existencias.aspx" />
     <Content Include="Productos.aspx" />
+    <Content Include="r ventas.aspx" />
     <Content Include="Recursos\Captura de pantalla %28819%29.png" />
     <Content Include="Recursos\Captura de pantalla %28821%29.png" />
     <Content Include="Recursos\Captura de pantalla %28824%29.png" />
@@ -432,6 +433,13 @@
       <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="r ventas.aspx.cs">
+      <DependentUpon>r ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="r ventas.aspx.designer.cs">
+      <DependentUpon>r ventas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Registro de Compras.aspx.cs">
       <DependentUpon>Registro de Compras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -186,11 +186,11 @@ body {
        <a runat="server" href="~/formulario registro empleados">Registro de Empleados</a>
        <a runat="server" href="~/Registro de Usuarios"> Usuarios</a>
       <a runat="server" href="~/Registro de compras"> Compras</a>
-      <a runat="server" href="~/registro de ventas">  Ventas</a>
+      <a runat="server" href="~/r ventas">  Ventas</a>
       <a runat="server" href="~/rpuestos"> Puesto/Empleado</a>
         <a runat="server" href="~/Existencias">Existencias</a>
         <a runat="server" href="~/Productos">Productos</a>
-        >
+        
     </div>
   </div> 
 
