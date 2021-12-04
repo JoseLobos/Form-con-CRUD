@@ -223,3 +223,16 @@ body {
     </form>
 </body>
 </html>
+
+<div class="copyright" align="center">
+<script >
+
+    document.write('& copy;');
+    document.write(' Technologycenter.com ');
+    document.write(' 2021 - ');
+    document.write(new Date().getFullYear());
+    document.write(' Technologycenter.com - All Rights Reserved. ');
+    document.write('<br/>Last Updated :');
+    document.write(document.lastModified);
+    </script >
+          </div >
